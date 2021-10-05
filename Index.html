@@ -1,0 +1,590 @@
+<!--All Images and Sound effects are from Google-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game 😃</title>
+        <style>
+            
+
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+outline: none:
+}
+
+body {
+  background:url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/1512c63e-a44e-48e8-92d6-51d80a43cc1e/de2xwvn-93a34d45-6c5d-4e65-9359-bd7491ddee97.jpg/v1/fill/w_1192,h_670,q_70,strp/blue_hexagon_pattern_by_mystica_264_de2xwvn-pre.jpg"); margin:0;
+    padding:0;
+font-family: 'Press Start 2P', cursive;
+height:100vh;
+width:100vw;
+}
+button{
+    font-family: 'Press Start 2P', cursive;
+
+}
+#covering{
+    height:100vh;
+    width:100vw;
+    background:url("https://images.unsplash.com/photo-1608754482805-6f630357358b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-repeat:no-repeat;
+    background-position:fixed;
+    left:-30rem;
+    z-index:999;
+    font-size:2rem;
+    display:none;
+}
+#srt{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:none;
+}
+.btn{
+        height:50px;
+    width:80vw;
+    border-radius:5px;
+     background-color: rgba(295,295,295,0.10);
+     backdrop-filter: blur(100px);
+     box-shadow: 0 25px 23px rgba(0,0,0,0.50);
+    position:relative;
+    top:0%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    text-transform:uppercase ;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-shadow:0px 0px 3px darkgrey;
+    border:none;
+    font-size:1rem;
+    margin-top:10px;
+font-family: 'Press Start 2P', cursive;
+
+}
+#dov{
+   background-color:#999;
+    background-size:100% 100%;
+    display:none;
+    height:100vh;
+    width:100vw;
+    clip-path:circle(10% at 50% 30%);
+    position:absolute;
+    top:0;
+    left:0;
+}
+*{
+margin:0;
+padding:0;
+}
+h1{
+    color:white;
+    position:absolute;
+    top:10%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-shadow:0px 0px 3px black;
+    
+}
+
+#button2, #button{
+    height:50px;
+    width:100vw;
+      background-color: rgba(295,295,295,0.10);
+     backdrop-filter: blur(100px);
+     box-shadow: 0 25px 23px rgba(0,0,0,0.50);
+      color:white;
+    font-size:1rem;
+    border:none;
+    position:absolute;
+    bottom:0;
+    
+    }
+#winner, #loser{
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    top:0;
+    left:0;
+    background-image:url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/space-stars-texture-sololos.jpg");
+    display:none;
+}
+#win{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+    
+}
+#lose{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+    
+}
+
+#canva{
+    background-image:url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/space-stars-texture-sololos.jpg");
+}
+audio{
+    display:none;
+}
+ #how, #credits{
+    height:60vh;
+    width:80vw;
+     background-color: rgba(255,255,255,0.06);
+     backdrop-filter: blur(15px);
+     box-shadow: 0 25px 23px rgba(0,0,0,0.15);
+    text-align:center;
+     color:white;
+    position:absolute ;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:none;
+    
+
+ }
+ul{
+       color:white;
+    margin-top:5rem;
+    color:white;
+    text-align:center;
+    list-style:none;
+   font-size:1rem;
+}
+
+h4{
+  margin-top:5px;
+    color:white;
+    
+}
+p{
+    font-size:0.8rem;
+    margin-top:5rem;
+}
+li{
+    font-size:0.8rem;
+}
+#button1{
+    height:50px;
+    width:100%;
+      background-color: rgba(295,295,295,0.10);
+     backdrop-filter: blur(100px);
+     box-shadow: 0 25px 23px rgba(0,0,0,0.50);
+      color:white;
+    font-size:1rem;
+    border:none;
+    position:relative;
+    top:3.4rem;
+}
+#m2{
+    height:180px;
+    width:180px;
+    border-radius:50%;
+    border-top:5px solid deepskyblue;
+    border-left:5px double transparent;
+    border-bottom:5px solid deepskyblue;
+    border-right:5px double transparent;
+    border-width:10px;
+    animation:bi4 8s linear infinite;
+    position:absolute ;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    transform-style:preserve-3d;
+}
+#m{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    border-top:5px solid slateblue;
+    border-left:5px double transparent;
+    border-bottom:5px solid slateblue;
+    border-right:5px double transparent;
+    border-width:10px;
+    animation:bi 2s linear infinite;
+    position:absolute ;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    transform-style:preserve-3d;
+}
+#l{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    border-top:5px solid slateblue;
+    border-left:5px double transparent;
+    border-bottom:5px solid slateblue;
+    border-right:5px double transparent;
+    border-width:10px;
+    animation:bi 8s linear infinite;
+    position:absolute ;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    transform-style:preserve-3d;
+}
+#w{
+    height:100%;
+    width:100%;
+    background-color:#485063;
+    display:block;
+    position:absolute;
+}
+.rat{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color:#343d52;
+    box-shadow:0vh 0vh 8vh #333;
+    position:absolute ;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    transform-style:preserve-3d;
+    overflow:hidden;
+    
+}
+#an:before{
+    position:absolute ;
+    left:0;
+    right:0;
+    top:45px;
+    margin:auto;
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    transform:scale(7);
+    box-shadow:0vh 0vh 13vh #fff;
+    background:white;
+    animation:lm 3s;
+    color:#343d52;
+    content:'';
+    text-align:center;
+    justify:center;
+    align-items:center;
+    font-weight:bold;
+   font-family: 'Times New Roman', Times, serif;
+  
+}
+@keyframes lm{
+      0%{
+        content:'T'; 
+            font-size:0.1rem;
+ 
+      }
+      50%{
+          content:'A';
+              font-size:0.1rem;
+
+      }
+    100%{
+         content:'N';
+             font-size:0.1rem;
+
+    }
+
+}
+.ma{
+       height:130px;
+    width:130px;
+    border-radius:50%;
+    border-top:5px solid deepskyblue;
+    border-left:5px double transparent;
+    border-bottom:5px solid slateblue;
+    border-right:5px double transparent;
+    border-width:10px;
+    animation:bi4 4s linear infinite;
+    position:absolute ;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    transform-style:preserve-3d;
+}
+@keyframes bi{
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+@keyframes bi4{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+        </style>
+        </head>
+    <body>
+<script src="https://www.wpromotions.eu/confetti.min.js"></script>
+ 
+    <div id="w">
+    <div class="ma">
+     </div>   <div class="rat"><div id="an"></div></div>
+        <div id="l"></div>
+        <div id="m"></div>
+        <div id="m2"></div>
+        </div>
+    
+    <div id="covering">
+        <div id="srt">
+            
+        <button class="btn" id="btn">Start</button><br>
+             <button onclick="howplay()" class="btn">How to play? </button><br>
+             <button onclick="showcredit()" class="btn">credits</button>
+             </div>
+             <div id="how"><br>
+    <h5 id="heading">How To Play?</h5>
+    <p>Drag the circle and find the ball  before the timer ends!  </p>
+    <button id="button1" onclick="returnback2()">Return</button>
+
+</div>
+
+<div  id="credits"><br>
+    <h5 id="heading">CREDITS</h5>
+    <ul>
+        
+        <li>Ayush</li>
+        <li>Nirbhay</li>
+        <li>Tapabrata Banerjee </li>
+        <li>Aditya</li>
+    </ul>
+    <button id="button1" onclick="returnback()">Return</button>
+</div>
+            </div>
+            </div>
+    <div id="dov">
+     <canvas id="canva"></canvas> 
+     </div>
+     <h1 id="count"></h1>
+ <div id="winner">
+     <h1 id="win">YOU WIN!🥳</h1> 
+     <button id="button">RESTART!</button>
+
+ </div>
+ <div id="loser">
+     <h1 id="lose">YOU LOST!</h1>     
+  <button id="button2">RESTART!</button>
+
+ </div>
+ <audio id="a"controls>
+    <source src="https://www.dropbox.com/s/5amaz92y1anadwp/Wii%20Music.mp3?raw=1" type="audio/mpeg">
+</audio>
+<script>
+    
+var xC, yC, a, b, xX = (window.innerWidth/100)*5, yX = (window.innerHeight/100)*5;
+window.onload = function(){
+document.getElementById("btn").onclick = function(){
+document.getElementById("covering").style.display = "none";
+document.getElementById("dov").style.display = "block";
+    document.getElementById("how").style.display="none";
+    document.getElementById("how").style.display="none";
+document.body.style.background = `url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/1512c63e-a44e-48e8-92d6-51d80a43cc1e/de2xwvn-93a34d45-6c5d-4e65-9359-bd7491ddee97.jpg/v1/fill/w_1192,h_670,q_70,strp/blue_hexagon_pattern_by_mystica_264_de2xwvn-pre.jpg")`;
+  var audio1= document.getElementById("a");
+    audio1.play();
+    start();
+}
+
+function start(){
+var cra2 = true;
+    var div = document.getElementById("dov");
+    
+    div.addEventListener("touchmove", star);
+    div.addEventListener("touchstart", star);
+    div.addEventListener("touchcancel", star);
+    function star(e){
+    xC = e.touches[0].clientX;
+    yC = e.touches[0].clientY;
+    a = xC/window.innerWidth*100;    
+    b = yC/window.innerHeight*100;  
+    div.style.clipPath = `circle(10% at ${a}% ${b}%)`;    
+    }
+    
+
+var counter = 11;
+var cra = true;
+setInterval ( function(){
+    counter--;
+    if ( counter >= 0 ){
+            id= document.getElementById( "count");
+        id.innerHTML= counter;
+    } 
+    if (counter === 0){
+    if(cra == true){
+    cra2 = false;
+    confetti.stop();
+document.getElementById("dov").style.display="none";
+        document.getElementById("button2").style.display="block";     document.getElementById("loser").style.display="block";
+        }
+        
+        }
+        
+        
+    
+    },  1100);
+
+
+
+
+const canvas=  
+       document.getElementById('canva');
+       const ctx= canvas.getContext('2d');
+
+       canvas.width= window.innerWidth;
+       canvas.height= window.innerHeight;
+       
+       let particlesArray = [];
+       let numberOfParticles = 1;
+       
+ const kk = ('15','25','20','29') ;
+  
+  
+       
+       class Particle {
+           constructor(x,y){
+               this.x=x
+               this.y=y
+               this.size= 15;
+               this.weight= 6;
+               this.directionX= Math.random()*kk;
+               this.color = 'white';
+              this.directionY = Math.random()*kk;
+           }
+  
+    
+           update(){
+               
+if(this.x+this.size>innerWidth || this.x-this.size<0){
+    this.directionX= -this.directionX;
+}
+if(this.y+this.size>innerHeight || this.y-this.size<0){
+    this.directionY = -this.directionY;
+}
+this.x += this.directionX;
+this.y += this.directionY;
+  
+           }
+           
+           draw(){
+               ctx.fillStyle =this.color ;
+               ctx.beginPath();
+               ctx.arc(this.x,this.y,this.size,0,Math.PI * 2);
+               ctx.closePath();
+               ctx.fill();
+           }
+           
+       }
+       function init(){
+    for(let i=0; i< numberOfParticles; i++ ){
+           
+     x = Math.random() * canvas.width ;
+     y = Math.random() * canvas.height ;         
+     particlesArray.push(new Particle(x, y));
+           }
+       }
+       
+       init();
+       
+       function animate(){
+ctx.fillStyle = 'rgba(0,0,0,5)';          
+ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let i=0; i < particlesArray.length; i++){
+                     
+                  
+         particlesArray[i].update();
+         particlesArray[i].draw();
+         stopgame(i)
+           }
+
+           requestAnimationFrame(animate);
+       }
+       animate();
+       function stopgame(i){
+  if((particlesArray[i].x >= (xC - xX) && particlesArray[i].x <= (xC + xX))&&(particlesArray[i].y >= (yC - yX) && particlesArray[i].y <= (yC + yX))){
+ if(cra2 == true){
+document.getElementById("button").style.display="block";     
+  confetti.start(); document.getElementById("winner").style.display="block";
+   var audio1= document.getElementById("a");
+   audio1.play();
+
+
+   cra = false;
+   }
+  }
+  }
+document.getElementById("button").onclick = function(){
+   counter = 11;
+   confetti.stop(); document.getElementById("button").style.display="none";     
+   document.getElementById("loser").style.display="none"; document.getElementById("winner").style.display="none";
+   div.style.clipPath = `circle(10% at 50% 50%)` ;
+   cra = true;
+   cra2 = true ;
+   Particle.x = Math.random()*window.innerWidth;
+   Particle.y = Math.random()*window.innerHeight;
+   Particle.directionX= Math.random()*10 + 66;
+   Particle.directionY= Math.random()*10 + 6;
+  }
+document.getElementById("button2").onclick = function(){
+   counter = 11;
+   confetti.stop();
+   document.getElementById("loser").style.display="none"; document.getElementById("button2").style.display="none";      document.getElementById("winner").style.display="none";
+   document.getElementById("dov").style.display = "block";
+   div.style.clipPath = `circle(10% at 50% 50%)` ;    
+   cra = true;
+   cra2 = true;
+   Particle.x = Math.random()*window.innerWidth;
+   Particle.y = Math.random()*window.innerHeight;
+   Particle.directionX= Math.random()*10 + 6;
+   Particle.directionY= Math.random()*10 + 6;
+  }
+ }
+}
+function howplay(){
+    document.getElementById("srt").style.display="none";
+    document.getElementById("how").style.display="block";
+}
+function showcredit(){
+    document.getElementById("srt").style.display="none";
+    document.getElementById("credits").style.display="block";
+}
+
+function returnback(){
+    document.getElementById("srt").style.display="block";
+    document.getElementById("credits").style.display="none";
+}
+function returnback2(){
+    document.getElementById("srt").style.display="block";
+    document.getElementById("how").style.display="none";
+}
+function load(){
+  document.getElementById("covering").style.display="block";
+  document.getElementById("srt").style.display="block";
+    document.getElementById("w").style.display="none";
+}
+setTimeout(load, 2200);
+
+
+</script>
+
+ </body>
+</html>
